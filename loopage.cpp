@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int Calage(int);
+int main()
+{
+	int years;
+	for(int i=1;i<=3;i++){
+		cout<<"Enter Year  "<<i<<": ";
+		cin>>years;
+		int age=Calage(years);
+		cout<<"Age"<<i<<": "<<age<<endl;
+		if(years>=2563){
+		if(years>=2563)cout<<"Enter Years Again"<<endl;
+		cout<<"Enter Year : ";
+		cin>>years;
+		cout<<"Age"<<age<<endl;
+		}
+		else break;
+	}	
+	return 0;
+}
+int Calage(int y)
+{	int age;
+	age=2563-y;
+	return(age);
+}
